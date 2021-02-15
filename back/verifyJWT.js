@@ -7,8 +7,8 @@ module.exports =  function (req, res, next) {
 
     try{
         const verified = jwt.verify(token, 'cika123')
-          req.user = verified
-            next()
+        req.user = verified
+        next()
 
     }catch (e) {
         console.log(e)

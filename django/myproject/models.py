@@ -24,15 +24,6 @@ class Comment(models.Model):
         db_table = 'comment'
 
 
-class Hello(models.Model):
-    content = models.CharField(max_length=34, blank=True, null=True)
-    title = models.CharField(max_length=13, blank=True, null=True)
-
-    class Meta:
-        managed = False
-        db_table = 'hello'
-
-
 class Theme(models.Model):
     title = models.CharField(unique=True, max_length=14)
     content = models.CharField(max_length=200)
